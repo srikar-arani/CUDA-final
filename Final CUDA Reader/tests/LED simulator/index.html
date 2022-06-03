@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader LED Simulator</title>
+</head>
+<body>
+    <style>
+        .reader-body {
+            width: 300px;
+            height: 400px;
+            background-color: #202020;
+            border-radius: 10%;
+            margin: 50px auto;
+            display:flex;
+        }
+        .led {
+            position: relative;
+            top: 75%;            
+            background-color:aliceblue;
+            width: 10px;
+            height: 40px;
+            border-radius: 2px;
+        }
+        .led#led1 {
+            left: calc(50% - 30px);            
+        }
+        .led#led2 {
+            left: calc(50% - 5px);
+        }
+        .led#led3 {
+            left: calc(50% + 20px);
+        }
+        .r {
+            background-color:red;
+        }
+        .g {
+            background-color:green;
+        }
+        .b {
+            background-color:blue;
+        }
+        .y {
+            background-color:yellow;
+        }
+        .p {   
+            background-color:purple;
+        }
+        .w {
+            background-color:white;
+        }
+        .k {
+            background-color: #585858;
+        }
+        .menu {
+            display: flex-wrap;
+            justify-content: center;
+            text-align: center;
+            width: 600px;
+            margin:auto;
+        }
+        button {
+            margin: 0.4em;
+            width: 7em;
+        }
+        input {
+            width: 5em;
+            margin:0.2em;
+        }
+        label {
+            margin-left: 1em;
+            font-size: 10pt;
+        }
+    </style>
+    <div class='reader-body'>
+        <div class = 'led k' id='led1'></div>
+        <div class = 'led k' id='led2'></div>
+        <div class = 'led k' id='led3'></div>
+    </div>
+    <div class=menu>
+        <button id='positive'>Positive</button>
+        <button id='negative'>Negative</button>
+        <button id='invalid'>Invalid</button>
+        <button id='result-error'>Error Result</button>
+        <button id='idle'>Idle</button>
+        <button id='test-error'>Test Error</button>
+        <button id='waiting'>Waiting</button>
+        <button id='running'>Running</button>
+        <button id='wifi-ap'>WiFi-AP</button>
+        <button id='wifi-client'>WiFi-Client</button>
+        <button id='wifi-error'>WiFi Error</button>
+        <button id='pico-error'>Pico Error</button>
+        <button id='power-on'>Power On</button>
+        <button id='reset-btn'>Reset Btn</button>
+        <button id='clear'>Clear</button>
+        
+    </div>
+    <div class="menu">
+    <label>Negative:</label><input id='N' type="text" value=1>
+    <label>Positive:</label><input id='P' type="text" value=3>
+    <label>Status:</label><input id='S' type="text" value=2>
+    </div>
+    <script src='./index.js'></script>
+</body>
+</html>

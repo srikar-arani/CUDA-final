@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+     
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    
+    <!-- JS, Popper.js, and jQuery -->
+<script src="js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="js/popper.min.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+<script src="/js/5e90ff7aaa.js" crossorigin="anonymous"></script> -->
+<title>
+    {{sysid}} Dev Page
+</title>
+</head>
+
+<body >
+    <nav class="navbar navbar-dark bg-primary mb-4 justify-content-center"  >
+        <a class='btn  btn-primary btn-outline-light btn-sm' href="/index" >Home Page</a>
+        <!-- <i class="fa fa-home" aria-hidden="true"></i> -->
+        <a  class="navbar-brand text-center" style="padding: 0px 10px 0px 25px;"> {{sysid}} APIs <span style='font-size:10px'> v{{version}}</span></a>
+        <a class='btn  btn-warning btn-outline-light btn-sm' id="connectBtn" >Reconnect</a> 
+        <!-- <i class="fa fa-undo"></i> -->
+    </nav>
+
+    <div class="container">
+        <style>
+            .list-group {
+                height: 800px;
+                overflow-y: scroll;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: none;
+                }
+            .card {
+                display: none;
+            }
+            
+            .active {
+                display: block;
+            }
+            .list-group .list-group-item {
+                font-size: 12px;
+                padding: 5px;
+                }
+
+            .list-group .list-group-item:hover {
+                border: 1px solid greenyellow;
+                font-size: 16px;
+                color: blue;
+                cursor: pointer;
+                }
+            .selected {
+                background-color:greenyellow;
+            }
+            .card.response { 
+                display: block;
+                padding:1px;
+                border: none;
+            }
+            .card-text {
+                font-family:monospace;
+            }
+            #response-list .card-body{
+                padding:5px 15px 5px 15px;
+                background-color:rgb(24, 34, 48);
+                color:blanchedalmond;
+                font-family: monospace;
+                border: solid 1px rgba(0, 191, 255, 0.767);
+                border-radius: 4px;
+            }
+        </style> 
+
+        <div class="row">
+            <div class="col-sm-3 "  >
+                <div class="dropdown ">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" >
+                      Select Module
+                    </button>
+                    <div class="dropdown-menu"> 
+                        {% for module in modules %}
+                                <a class="dropdown-item" href="#" id="{{module}}">{{module}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                  {% for moduleName,moduleDict in modules.items() %}
+                        <ul class="list-group" id="{{moduleName}}">
+                            {% for funcName in moduleDict %}
+                            <li class="list-group-item" id="{{moduleName}}-{{funcName}}">{{funcName}}</li>
+                            {% endfor %}
+                        </ul>                          
+                  {% endfor %}                
+            </div>
+
+            <div class="col-sm-9">
+                {% for moduleName,moduleDict in modules.items() %} 
+
+                <div class="card docInput" id="{{moduleName}}">
+                    <div class="card-body">
+                        <h5 class="card-title"> &lt; {{moduleName}} &gt; Module</h5>
+                        <hr>
+                        <p class="card-text" style="white-space:pre-wrap">{{moduledoc[moduleName]}}</p> 
+                    </div>
+                </div> 
+
+                    {% for funcName,func in moduleDict.items() %}
+                    <div class="card docInput" id="{{moduleName}}-{{funcName}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{moduleName}} :: {{funcName}}</h5>
+                            <hr>
+                            <p class="card-text" style="white-space:pre-wrap">{{func["doc"]}}</p> 
+                            <hr>
+                            {% for signature,default in func["signature"] %}
+                            <div class="input-group input-group-sm mb-3" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" >{{signature}}</span>
+                                </div>
+                                <input type="text" class="form-control" name="{{signature}}" placeholder="{{default}}">
+                              </div>
+                            
+                            {% endfor %} 
+                            <button type="button" class="btn btn-outline-primary btn-sm submitBtn" id="{{moduleName}}-{{funcName}}">Run function</button>
+                        </div>
+                    </div> 
+                    {% endfor %}                                    
+                {% endfor %}
+                    <hr>
+                <div id='response-list'>
+                </div>               
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+
+<script >
+
+let ws;
+var callsig=null;
+
+function JSONescape(data) {
+    return JSON.stringify(data).replace(/</g,'&lt;').replace(/>/g,'&gt;')
+}
+
+function showResponse(data,_callsig) {
+    let res = $('#response-list');
+    let parameters = "";
+    let color = ""; 
+    if (!_callsig) {return}
+
+    if (data.data && data.data.tailMsg) {
+        let msgs = "";
+        data.data.tailMsg.forEach(d=>{msgs+= 
+            `<p class="card-text" style="color:lightgreen;padding:0px 1px 0px 10px;margin-bottom:0">&gt;${JSONescape(d).slice(1,-1)}</p>`
+        })
+        res.prepend(`
+        <div class="card response">
+            <div class="card-body">
+                ${msgs}
+            </div>
+        </div> 
+        `)
+    } else {
+
+        if (_callsig) {
+            parameters = `<p style="margin:1px">Sent: ${JSONescape(_callsig)}</p>`
+            res.prepend(`
+                <div class="card response">
+                    <div class="card-body">
+                    ${parameters}
+                    <p class="card-text" style="color:${data.status == 'ok'? 'lightgreen':'red'}">${JSONescape(data)}</p>
+                    </div>
+                </div> 
+                `)
+        }
+        
+    }
+    callsig=null;
+    if (res.children().length >= 20) {
+        res.children().last().remove()
+    }
+}
+
+function connectWebsocket () {
+    try {
+        ws = new WebSocket("{{websocketAddr}}");
+        ws.onopen = (e) => {showResponse({status:'ok', msg: 'Websocket connected.'}, 'Open Connection') }
+        ws.onmessage = res => {showResponse(JSON.parse(res.data),callsig) }
+        ws.onclose = e=>{ showResponse({status:'error', msg: 'Websocket Closed.'},'Connection Closed') }
+        ws.onerror = err=>{console.log(err),showResponse({status:'error', msg: 'Websocket Connection Error.'},'Connection Error')}
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+$(document).ready(()=>{
+    connectWebsocket()
+})
+
+$('#connectBtn').click(e=>{
+    connectWebsocket()
+})
+
+
+$('.dropdown-item').click((e)=>{
+    let m = e.target.id; 
+    $('.dropdown-item').removeClass('selected');
+    $(e.target).addClass('selected');
+    $('.list-group').removeClass('active');
+    $(`.list-group#${m}`).addClass('active');
+    $('.list-group-item').removeClass('selected');
+    $('.dropdown-toggle').text(m);
+    $('.docInput').removeClass('active');
+    $(`.docInput#${m}`).addClass('active');
+}) 
+
+$('.list-group-item').click(e=>{
+    let m = e.target.id;
+    $('.list-group-item').removeClass('selected')
+    $(e.target).addClass('selected');
+    $('.docInput').removeClass('active');
+    $(`.docInput#${m}`).addClass('active');
+})
+
+$('.submitBtn').click(e=>{
+    let m = e.target.id;
+    callsig = {'action':m.replace('-','.')};
+    $(`.docInput#${m} input`).each((idx,ele)=>{
+        let v = $(ele).val();
+        let p ; 
+        if (isNaN(v)) {
+            try { p = JSON.parse(v) } catch (err) {p=v}
+        } else {
+            p = +v 
+        }
+        callsig[$(ele).attr('name')]=p;
+    });
+    if (ws && (ws.readyState == 1)) {
+        ws.send(JSON.stringify(callsig));        
+    } else {
+        showResponse('WebSocket closed.')
+    }
+})
+
+
+</script>
+
+
+</html>

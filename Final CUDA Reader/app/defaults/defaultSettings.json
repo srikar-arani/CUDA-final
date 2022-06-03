@@ -1,0 +1,80 @@
+{
+  "main": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1
+  },
+  "heating": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1,
+    "goalTemperature": 65
+  },
+  "measurement": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1,
+    "picoPort": "/dev/serial0",
+    "demoMode":false
+  },
+  "dataProcess": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1
+  },
+  "client": {
+    "websocketPort": 8765,
+    "bluetoothPort": 1,
+    "bluetoothUUID": "9099a18a-cdf9-11ea-8971-dca90491a628",
+    "bluetoothListen": 10,
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1
+  },
+  "dataStore": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1,
+    "storeDataInterval": 3600,
+    "uploadURL": false
+  },
+  "peripheral": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 3,
+    "wifiTimeout": 10
+  },
+  "httpServer": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1,
+    "disableDevPage": false
+  },
+  "bee": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1
+  },
+  "status": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 1
+  },
+  "cloud": {
+    "daemon": false,
+    "logLevel": "DEBUG",
+    "printMessages": true,
+    "loopInterval": 10,
+    "enable": false
+  }
+}

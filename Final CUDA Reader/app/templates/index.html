@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+     
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+<script src="/js/5e90ff7aaa.js" crossorigin="anonymous"></script>  -->
+<title>
+   {{sysid}}
+</title>
+</head>
+
+<body >
+    <style>
+        .col-sm-4 {
+          padding-bottom: 2%;
+        }
+    </style>
+    <nav class="navbar navbar-dark bg-primary mb-4 justify-content-center" >
+        <a  class="navbar-brand text-center" style="padding: 0px 10px 0px 25px;"> {{sysid}} Main Page <span style='font-size:10px'>{{version}}</span></a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h1 class="card-title"><a href="/runtest">Dev Page</a> </h1>
+                      <h6 class="card-subtitle mb-2 text-muted">Run test on device</h6>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h1 class="card-title"><a href="/devpage">Advanced</a> </h1>
+                      <h6 class="card-subtitle mb-2 text-muted">API Docs and run functions</h6>
+                    </div>
+                </div>    
+
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h1 class="card-title"><a href="#" onclick="javascript:window.location.port=9001" >Supervisor</a> </h1>
+                      <h6 class="card-subtitle mb-2 text-muted">Supervisor Status</h6>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="col-sm-4">
+                
+                <div class="card">
+                    <div class="card-body">
+                      <h1 class="card-title"><a href="/demoUI">UI</a> </h1>
+                      <h6 class="card-subtitle mb-2 text-muted">Web App UI Demo Page</h6>
+                    </div>
+                </div> 
+            </div>
+        
+      
+      
+            <div class="col-sm-4">
+                
+                <div class="card">
+                    <div class="card-body">
+                      <h1 class="card-title"><a href="#" onclick="javascript:window.location.port=8888">Jupyter</a> </h1>
+                      <h6 class="card-subtitle mb-2 text-muted">Jupyter Notebook</h6>
+                    </div>
+                </div> 
+            </div>
+
+             
+            
+        </div>
+       
+    </div>
+</body>
+
+<script>
+   
+
+</script>
+
+</html>

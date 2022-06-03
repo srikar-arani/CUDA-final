@@ -1,0 +1,131 @@
+1. Install raspbian lite 32 bit to drive. 
+
+2. Put [ssh] and [wpa_supplicant.conf] in boot drive. 
+
+3. RPi connected with pi@raspberrypi.local, pwd: raspberry 
+
+4. # somehow get the install_pkg.py 
+   # Method 1. sudo curl -L <url> -o /home/pi/install_pkg.py
+   # current url: https://raw.githubusercontent.com/AptitudeCodebase/covid_sensor/hui-branch/RPi/backend/app/setup/install_pkg.py?token=AKU4I2ALOTFFXL5PHN2P53S7ER5SC
+
+
+Preferred method:
+4. # Method 2. 
+sudo apt install git
+    then go to step 6.
+
+5. sudo python3 install_pkg.py
+
+6. clone git to directory with password configured:
+
+sudo git config --global credential.helper store 
+sudo git clone https://github.com/AptitudeCodebase/covid_sensor.git
+
+>>> enter password.
+
+[optional] 
+
+cd covid_sensor
+sudo git checkout hui-branch
+
+7. Run setup script:
+
+sudo python3 ~/covid_sensor/app/setup/install.py
+
+Pi will be renamed to new name. 
+Write down the name to be able to access Pi.
+
+8. set password
+sudo raspi-config
+# Then select according to options.
+
+Note: There are some safety issues with password etc.
+
+
+
+
+====================================================================================
+Brief Steps:
+
+=======
+Brief Steps:
+
+
+tl sp
+OR
+ssh pi@raspberrypi.local -o "UserKnownHostsFile /dev/null" 
+
+password: raspberry
+
+sudo raspi-config
+Change password to ams
+
+sudo apt install git
+
+sudo git config --global credential.helper store 
+sudo git clone https://github.com/AptitudeCodebase/covid_sensor.git
+
+cd covid_sensor
+sudo git checkout hui-branch
+sudo python3 ~/covid_sensor/app/setup/install.py
+
+
+To setup Jupyter notebook:
+sudo python3 ~/covid_sensor/app/setup/install.py
+Select -9
+Then run
+sudo jupyter notebook password
+====================================================================================
+
+
+
+
+
+====================================================================================
+====================================================================================
+cloning to SD card.
+https://www.howtogeek.com/341944/how-to-clone-your-raspberry-pi-sd-card-for-foolproof-backup/
+use Win32 Disk Imager
+
+
+
+=======
+
+
+
+
+███████╗██████╗      ██████╗██╗      ██████╗ ███╗   ██╗███████╗
+██╔════╝██╔══██╗    ██╔════╝██║     ██╔═══██╗████╗  ██║██╔════╝
+███████╗██║  ██║    ██║     ██║     ██║   ██║██╔██╗ ██║█████╗  
+╚════██║██║  ██║    ██║     ██║     ██║   ██║██║╚██╗██║██╔══╝  
+███████║██████╔╝    ╚██████╗███████╗╚██████╔╝██║ ╚████║███████╗
+╚══════╝╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+                                                               
+Install a new card as usual,
+
+The SYSTEM_ID, SYSTEM_SEED, SYSTEM_SERIAL, SYSTEM_ID_LONG
+are generated on the first time the system is started.
+these information is then written to file:
+/app/defaults/device_id.json.
+Upon restart, these information are loaded from the file.
+
+If the device_id.json is deleted, a new ID will be generated Automatically.
+
+TO create a SD clone,
+delete the device_id file. 
+remove wifi password in  /etc/wpa_supplicant/wpa_supplicant-wlan0.conf 
+
+
+
+
+
+
+██████╗ ██╗ █████╗  ██████╗ ███╗   ██╗ ██████╗ ███████╗███████╗    ████████╗ ██████╗  ██████╗ ██╗     
+██╔══██╗██║██╔══██╗██╔════╝ ████╗  ██║██╔═══██╗██╔════╝██╔════╝    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     
+██║  ██║██║███████║██║  ███╗██╔██╗ ██║██║   ██║███████╗█████╗         ██║   ██║   ██║██║   ██║██║     
+██║  ██║██║██╔══██║██║   ██║██║╚██╗██║██║   ██║╚════██║██╔══╝         ██║   ██║   ██║██║   ██║██║     
+██████╔╝██║██║  ██║╚██████╔╝██║ ╚████║╚██████╔╝███████║███████╗       ██║   ╚██████╔╝╚██████╔╝███████╗
+╚═════╝ ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
+
+1. install matplotlib: sudo apt install python3-matplotlib
+2. sudo apt-get install libopenjp2-7 # in case cannot find 'libopenjp2-so-7'

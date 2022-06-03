@@ -1,0 +1,6 @@
+module Pods_CUDA_CUDATests {
+  umbrella header "Pods-CUDA-CUDATests-umbrella.h"
+
+  export *
+  module * { export * }
+}

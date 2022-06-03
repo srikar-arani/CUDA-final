@@ -1,0 +1,1 @@
+../../../../../node_modules/rn-qr-generator/ios/RNQrGenerator.h

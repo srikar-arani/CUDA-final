@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">141405103878-rsc5n2819h3b7fors0u0oadthfv4dmde.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">141405103878</string>
+    <string name="google_api_key" translatable="false">AIzaSyATGMAne3yh4dtWdibqdyWhS1UyNOxWC4U</string>
+    <string name="google_app_id" translatable="false">1:141405103878:android:b23845d6fb75a36493e087</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyATGMAne3yh4dtWdibqdyWhS1UyNOxWC4U</string>
+    <string name="google_storage_bucket" translatable="false">cuda-ac739.appspot.com</string>
+    <string name="project_id" translatable="false">cuda-ac739</string>
+</resources>

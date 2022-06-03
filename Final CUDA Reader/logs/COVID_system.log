@@ -1,0 +1,72 @@
+04/22 15:59:22|MAIN       |DEBUG   : <MainModule> initialized.
+04/22 15:59:22|MAIN       |DEBUG   : +++++++++Starting MainModule+++++++++
+04/22 15:59:22|HEATING    |DEBUG   : <HeatingModule> initialized.
+04/22 15:59:22|CONFIG     |DEBUG   : <ConfigModule> initialized.
+04/22 15:59:22|MEASUREMENT|DEBUG   : <MeasurementModule> initialized.
+04/22 15:59:22|CONFIG     |DEBUG   : ConfigModule Registered. Exit thread.
+04/22 15:59:22|DATAPROCESS|DEBUG   : <DataProcessModule> initialized.
+04/22 15:59:22|DATAPROCESS|DEBUG   : DataProcess.run: <DataProcessModule> registered. Exit.
+04/22 15:59:22|DATASTORE  |DEBUG   : <DataStoreModule> initialized.
+04/22 15:59:22|PERIPHERAL |DEBUG   : <PeripheralModule> initialized.
+04/22 15:59:23|PERIPHERAL |DEBUG   : WifiService <client> initialized after 0.36 seconds.
+04/22 15:59:23|STATUS     |DEBUG   : <StatusModule> initialized.
+04/22 15:59:23|CLIENT     |DEBUG   : <ClientModule> initialized.
+04/22 15:59:23|CLIENT     |DEBUG   : Started WebsocketServer on ws://192.168.0.150:8765
+04/22 15:59:23|HTTPSERVER |DEBUG   : <HttpServerModule> initialized.
+04/22 15:59:23|CLOUD      |DEBUG   : <CloudModule> initialized.
+04/22 15:59:23|MAIN       |INFO    : Started from ['/covid_sensor/app.py', '-supervisor']
+04/22 15:59:24|HTTPSERVER |DEBUG   : Started HttpServer on: localhost:88
+04/22 15:59:34|HEATING    |DEBUG   : Temperature increase <7.23> C in heating QC.
+04/22 16:04:10|MAIN       |DEBUG   : <MainModule> initialized.
+04/22 16:04:10|MAIN       |DEBUG   : +++++++++Starting MainModule+++++++++
+04/22 16:04:10|HEATING    |DEBUG   : <HeatingModule> initialized.
+04/22 16:04:10|CONFIG     |DEBUG   : <ConfigModule> initialized.
+04/22 16:04:10|CONFIG     |DEBUG   : ConfigModule Registered. Exit thread.
+04/22 16:04:10|MEASUREMENT|DEBUG   : <MeasurementModule> initialized.
+04/22 16:04:10|DATAPROCESS|DEBUG   : <DataProcessModule> initialized.
+04/22 16:04:10|DATAPROCESS|DEBUG   : DataProcess.run: <DataProcessModule> registered. Exit.
+04/22 16:04:10|DATASTORE  |DEBUG   : <DataStoreModule> initialized.
+04/22 16:04:10|PERIPHERAL |DEBUG   : <PeripheralModule> initialized.
+04/22 16:04:10|PERIPHERAL |DEBUG   : WifiService <client> initialized after 0.21 seconds.
+04/22 16:04:10|STATUS     |DEBUG   : <StatusModule> initialized.
+04/22 16:04:10|CLIENT     |DEBUG   : <ClientModule> initialized.
+04/22 16:04:10|CLIENT     |DEBUG   : Started WebsocketServer on ws://192.168.0.150:8765
+04/22 16:04:10|HTTPSERVER |DEBUG   : <HttpServerModule> initialized.
+04/22 16:04:11|CLOUD      |DEBUG   : <CloudModule> initialized.
+04/22 16:04:11|MAIN       |INFO    : Started from ['/covid_sensor/app.py']
+04/22 16:04:11|HTTPSERVER |DEBUG   : Started HttpServer on: localhost:88
+04/22 16:04:13|CLIENT     |DEBUG   : Websocket connection from ('192.168.0.252', 62242). Total clients: 1.
+04/22 16:04:20|MAIN       |DEBUG   : getLatestVersion 1.4.3
+04/22 16:04:22|HEATING    |DEBUG   : Temperature increase <7.29> C in heating QC.
+04/22 16:06:09|CLIENT     |DEBUG   : Websocket connection from ('192.168.0.252', 62253). Total clients: 1.
+04/22 16:09:17|CLIENT     |DEBUG   : Websocket connection from ('192.168.0.252', 62271). Total clients: 1.
+04/22 16:09:17|CLIENT     |DEBUG   : Websocket connection from ('192.168.0.252', 62272). Total clients: 2.
+04/22 16:09:56|MEASUREMENT|DEBUG   : Start scan: chipType: 7
+04/22 16:11:03|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1799.590s.
+04/22 16:11:05|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1797.717s.
+04/22 16:11:23|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1779.588s.
+04/22 16:11:25|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1777.710s.
+04/22 16:11:43|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1759.587s.
+04/22 16:11:45|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1757.703s.
+04/22 16:12:03|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1739.587s.
+04/22 16:12:05|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1737.702s.
+04/22 16:12:23|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1719.586s.
+04/22 16:12:25|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1717.697s.
+04/22 16:12:43|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1699.586s.
+04/22 16:12:45|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1697.697s.
+04/22 16:13:03|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1679.585s.
+04/22 16:13:05|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1677.688s.
+04/22 16:13:23|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1659.584s.
+04/22 16:13:25|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1657.688s.
+04/22 16:13:43|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1639.583s.
+04/22 16:13:45|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1637.687s.
+04/22 16:14:03|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 1619.583s.
+04/22 16:14:05|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 1617.679s.
+04/22 16:14:16|MEASUREMENT|DEBUG   : Stopped Pico.
+04/22 16:14:30|MEASUREMENT|DEBUG   : Start scan: chipType: unknow chipType
+04/22 16:15:36|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 299.630s.
+04/22 16:15:37|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 297.827s.
+04/22 16:15:46|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 289.629s.
+04/22 16:15:48|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 287.484s.
+04/22 16:15:56|MEASUREMENT|DEBUG   : Measurement on C1, remaining time 279.628s.
+04/22 16:15:58|MEASUREMENT|DEBUG   : Measurement on C4, remaining time 277.483s.

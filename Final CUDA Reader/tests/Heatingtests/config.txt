@@ -1,0 +1,13 @@
+#config format:
+# time/operation command value
+# support following command:
+# 100 PWR 90 : set heating power to 90% for 100 seconds.
+# SET MPR 90 : set maximum power to 90% for the following tests.
+# 99 TMP 65 : set goal temperature to 65 deg. last for 99 seconds once temperature reach 65+/-1 deg.
+# 99 GOL 65 : set goal temperature to 65 deg, last for 99 seconds, regardless of sensor reach 65 or not.
+
+SET MPR 85 # set maximum power to 55
+10 PWR 100 # set heating power to 100% for 10 seconds
+10 GOL 67 # set heating goal to 67deg for 10 seconds
+15 TMP 64 # set heating goal temperature to 65 deg, hold for 15 seconds after reach 65
+20 TMP 55 # set heating goal temperature to 55 deg for 999 seconds

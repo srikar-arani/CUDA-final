@@ -1,0 +1,22 @@
+{
+  "name": "RNReactNativePdfLib",
+  "version": "1.0.0",
+  "summary": "A react native library for handling generating PDFs",
+  "description": "A react native library for handling generating PDFs",
+  "homepage": "https://github.com/Hopding/react-native-pdf-lib#readme",
+  "license": "Apache-2.0",
+  "authors": "Andrew Dillon",
+  "source": {
+    "git": "https://github.com/Hopding/react-native-pdf-lib.git",
+    "tag": "v1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "React": [
+
+    ]
+  },
+  "source_files": "*.{h,m}"
+}

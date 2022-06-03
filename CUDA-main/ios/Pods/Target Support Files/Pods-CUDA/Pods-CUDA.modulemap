@@ -1,0 +1,6 @@
+module Pods_CUDA {
+  umbrella header "Pods-CUDA-umbrella.h"
+
+  export *
+  module * { export * }
+}

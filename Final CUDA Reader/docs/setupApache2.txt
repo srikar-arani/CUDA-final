@@ -1,0 +1,96 @@
+# this setup is for install Apache2 and use it as a reverse proxy 
+# so that user can connect to the 80 port on Pi, and proxy it to the internal 88 port,
+# which is where the deviceApp httpServer is running at.
+# for future single page App hosting, refer to setupMemo.
+
+install apache2 
+sudo apt install apache2 -y
+
+sudo a2enmod proxy proxy_http proxy_ajp rewrite deflate headers proxy_balancer proxy_connect proxy_html
+
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+
+<VirtualHost *:80>
+    ProxyPreserveHost On
+    ProxyPass / http://127.0.0.1:88/
+    ProxyPassReverse / http://127.0.0.1:88/
+</VirtualHost>
+
+
+and run python http server at localhost 8080.
+
+run 
+sudo systemctl restart apache2
+sudo systemctl status apache2
+to restart and check status of apache2
+
+
+
+# setup https: (https://techexpert.tips/apache/enable-https-apache/)
+# but https will require websocket also use wss. WS will not work.
+1. install openssl (normally it's already installed)
+2. sudo a2enmod ssl rewrite
+3. sudo nano /etc/apache2/apache2.conf
+4. add following lines:
+    <Directory /var/www/html>
+    AllowOverride All
+    </Directory>
+5. create key and certificate with openssl:
+    mkdir /etc/apache2/certificate
+    cd /etc/apache2/certificate
+    openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out apache-certificate.crt -keyout apache.key
+6. vi /etc/apache2/sites-enabled/000-default.conf
+7. Add 443 configurations:
+    <VirtualHost *:443>        
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/certificate/apache-certificate.crt
+        SSLCertificateKeyFile /etc/apache2/certificate/apache.key
+    </VirtualHost>
+8. Redirect http to https:
+    <VirtualHost *:80>
+        RewriteEngine On
+        RewriteCond %{HTTPS} !=on
+        RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+    </virtualhost>
+    <VirtualHost *:443>
+            ServerAdmin webmaster@localhost
+            DocumentRoot /var/www/html
+            ErrorLog ${APACHE_LOG_DIR}/error.log
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+            SSLEngine on
+            SSLCertificateFile /etc/apache2/certificate/apache-certificate.crt
+            SSLCertificateKeyFile /etc/apache2/certificate/apache.key
+    </VirtualHost>
+
+
+# set up custom 503 pages to serve whenenver firmware is down. 
+(https://serverfault.com/questions/266924/apache-reverse-proxy-error-page-when-proxied-server-is-down)
+<VirtualHost *:80>
+    ProxyPreserveHost On
+    ProxyPass /http_errors/ !
+    ProxyPass / http://127.0.0.1:88/
+    ProxyPassReverse / http://127.0.0.1:88/
+    Alias /http_errors/ /var/www/html/
+    ErrorDocument 503 /http_errors/myerror.html
+</VirtualHost>
+In short:
+Add proxy exception for some alias, like http_errors (must be placed before actual proxy rule)
+Map alias to real path (must be existing and accessible by Apache)
+Map given HTTP status code to certain file within alias
+
+
+
+
+To serve static files in /var/www/html,
+Just remove the proxy pass
+<VirtualHost *:80>
+    Alias /http_errors/ /var/www/html/
+    ErrorDocument 503 /http_errors/myerror.html
+</VirtualHost>
+the copy all files from react build to /var/www/html folder.
+due to root problem, I have to copy files over fisrt then move to the folder.
+scp -r ./build pi@ams-abc.local:/home/pi/build
+then ssh to the reader,
+sudo mv -v /home/pi/build /var/www/html

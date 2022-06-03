@@ -1,0 +1,336 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cuda"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:4:22-65
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:5:5-73
+13-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:5:22-71
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:6:5-64
+14-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:6:22-62
+15
+16    <uses-feature
+16-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:7:5-89
+17        android:name="android.hardware.bluetooth_le"
+17-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:7:19-63
+18        android:required="true" />
+18-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:7:64-87
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:9:5-67
+20-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:9:22-64
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:10:5-65
+21-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:10:22-63
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->[com.facebook.flipper:flipper:0.99.0] /Users/noahcorona/.gradle/caches/transforms-3/85722bbced5f75f7128f01e28eb86f9e/transformed/jetified-flipper-0.99.0/AndroidManifest.xml:16:5-76
+22-->[com.facebook.flipper:flipper:0.99.0] /Users/noahcorona/.gradle/caches/transforms-3/85722bbced5f75f7128f01e28eb86f9e/transformed/jetified-flipper-0.99.0/AndroidManifest.xml:16:22-73
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[:react-native-firebase_database] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/database/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+23-->[:react-native-firebase_database] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/database/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to access Google Play Licensing -->
+24-->[:react-native-firebase_database] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/database/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+24-->[:react-native-firebase_database] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/database/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+25    <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> <!-- Required to read and write the expansion files on shared storage -->
+25-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-73
+25-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-70
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Required to read and write the expansion files on shared storage for Android 11 -->
+26-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:5-81
+26-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:22-78
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Required to to download files without a notification -->
+27-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:5-80
+27-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:22-77
+28    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+28-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:5-88
+28-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:22-85
+29
+30    <uses-feature
+30-->[:react-native-camera] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+31        android:name="android.hardware.camera"
+31-->[:react-native-camera] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:12:9-47
+32        android:required="false" />
+32-->[:react-native-camera] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:13:9-33
+33    <uses-feature
+33-->[:react-native-camera] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+34        android:name="android.hardware.camera.autofocus"
+34-->[:react-native-camera] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:15:9-57
+35        android:required="false" />
+35-->[:react-native-camera] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:16:9-33
+36
+37    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+37-->[com.github.Polidea:MultiPlatformBleAdapter:0.1.7] /Users/noahcorona/.gradle/caches/transforms-3/a7e46f70fb1e625514bf3b720f124748/transformed/jetified-MultiPlatformBleAdapter-0.1.7/AndroidManifest.xml:14:5-88
+37-->[com.github.Polidea:MultiPlatformBleAdapter:0.1.7] /Users/noahcorona/.gradle/caches/transforms-3/a7e46f70fb1e625514bf3b720f124748/transformed/jetified-MultiPlatformBleAdapter-0.1.7/AndroidManifest.xml:14:29-85
+38    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+38-->[com.polidea.rxandroidble:rxandroidble:1.7.1] /Users/noahcorona/.gradle/caches/transforms-3/667b8928f44583924632f0ac908ed86a/transformed/jetified-rxandroidble-1.7.1/AndroidManifest.xml:15:5-86
+38-->[com.polidea.rxandroidble:rxandroidble:1.7.1] /Users/noahcorona/.gradle/caches/transforms-3/667b8928f44583924632f0ac908ed86a/transformed/jetified-rxandroidble-1.7.1/AndroidManifest.xml:15:29-83
+39
+40    <application
+40-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:12:5-30:19
+41        android:name="com.cuda.MainApplication"
+41-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:13:7-38
+42        android:allowBackup="false"
+42-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:17:7-34
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.5.0] /Users/noahcorona/.gradle/caches/transforms-3/9eba7cef7293f195e486b5c1bb290770/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+44        android:debuggable="true"
+45        android:icon="@mipmap/ic_launcher"
+45-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:15:7-41
+46        android:label="@string/app_name"
+46-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:14:7-39
+47        android:roundIcon="@mipmap/ic_launcher_round"
+47-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:16:7-52
+48        android:theme="@style/AppTheme"
+48-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:18:7-38
+49        android:usesCleartextTraffic="true" >
+49-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/debug/AndroidManifest.xml:8:9-44
+50        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+50-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/debug/AndroidManifest.xml:11:9-86
+50-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/debug/AndroidManifest.xml:11:19-83
+51        <activity
+51-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:19:7-29:18
+52            android:name="com.cuda.MainActivity"
+52-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:20:9-37
+53            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+53-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:22:9-86
+54            android:label="@string/app_name"
+54-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:21:9-41
+55            android:launchMode="singleTask"
+55-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:23:9-40
+56            android:windowSoftInputMode="adjustResize" >
+56-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:24:9-51
+57            <intent-filter>
+57-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:25:9-28:25
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:26:13-65
+58-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:26:21-62
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:27:13-73
+60-->/Users/noahcorona/IdeaProjects/CUDA/android/app/src/main/AndroidManifest.xml:27:23-70
+61            </intent-filter>
+62        </activity>
+63
+64        <meta-data
+64-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:36
+65            android:name="app_data_collection_default_enabled"
+65-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-63
+66            android:value="true" />
+66-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-33
+67
+68        <service
+68-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
+69            android:name="com.google.firebase.components.ComponentDiscoveryService"
+69-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-89
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-database:20.0.3] /Users/noahcorona/.gradle/caches/transforms-3/ccbe99f29f81f4ebc1a5e3d35258adcd/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:31:13-37
+72            <meta-data
+72-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+73                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+73-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-120
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-database:20.0.3] /Users/noahcorona/.gradle/caches/transforms-3/ccbe99f29f81f4ebc1a5e3d35258adcd/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:32:13-34:85
+76                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+76-->[com.google.firebase:firebase-database:20.0.3] /Users/noahcorona/.gradle/caches/transforms-3/ccbe99f29f81f4ebc1a5e3d35258adcd/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:33:17-109
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-database:20.0.3] /Users/noahcorona/.gradle/caches/transforms-3/ccbe99f29f81f4ebc1a5e3d35258adcd/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:34:17-82
+78        </service>
+79
+80        <provider
+80-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-24:38
+81            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+81-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-88
+82            android:authorities="com.cuda.reactnativefirebaseappinitprovider"
+82-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-86
+83            android:exported="false"
+83-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-37
+84            android:initOrder="99" />
+84-->[:react-native-firebase_app] /Users/noahcorona/IdeaProjects/CUDA/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
+85        <provider
+85-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-48:20
+86            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
+86-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-70
+87            android:authorities="com.cuda.provider"
+87-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-60
+88            android:exported="false"
+88-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-37
+89            android:grantUriPermissions="true" >
+89-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-47
+90            <meta-data
+90-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-47:58
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-67
+92                android:resource="@xml/provider_paths" />
+92-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:47:17-55
+93        </provider>
+94        <provider
+94-->[:react-native-share-pdf] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-share-pdf/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-19:20
+95            android:name="androidx.core.content.FileProvider"
+95-->[:react-native-share-pdf] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-share-pdf/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-62
+96            android:authorities="com.cuda.provider"
+96-->[:react-native-share-pdf] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-share-pdf/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-60
+97            android:exported="false"
+97-->[:react-native-share-pdf] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-share-pdf/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+98            android:grantUriPermissions="true" >
+98-->[:react-native-share-pdf] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-share-pdf/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+99            <meta-data
+99-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-47:58
+100                android:name="android.support.FILE_PROVIDER_PATHS"
+100-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-67
+101                android:resource="@xml/file_paths" >
+101-->[:react-native-blob-util] /Users/noahcorona/IdeaProjects/CUDA/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:47:17-55
+102            </meta-data>
+103        </provider>
+104
+105        <service
+105-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/74957c105e2a184e2f8c8a18c7534ace/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:9:9-15:19
+106            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+106-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/74957c105e2a184e2f8c8a18c7534ace/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:10:13-91
+107            android:directBootAware="true"
+107-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:17:13-43
+108            android:exported="false" >
+108-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/74957c105e2a184e2f8c8a18c7534ace/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:11:13-37
+109            <meta-data
+109-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/74957c105e2a184e2f8c8a18c7534ace/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:12:13-14:85
+110                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+110-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/74957c105e2a184e2f8c8a18c7534ace/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:13:17-120
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/74957c105e2a184e2f8c8a18c7534ace/transformed/jetified-play-services-mlkit-barcode-scanning-16.2.0/AndroidManifest.xml:14:17-82
+112            <meta-data
+112-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/f0e6bc672f244c077e1a083362c7b732/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
+113                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+113-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/f0e6bc672f244c077e1a083362c7b732/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /Users/noahcorona/.gradle/caches/transforms-3/f0e6bc672f244c077e1a083362c7b732/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
+115            <meta-data
+115-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/noahcorona/.gradle/caches/transforms-3/64c4935952d1aafe18d1e11a200e444b/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:12:13-14:85
+116                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+116-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/noahcorona/.gradle/caches/transforms-3/64c4935952d1aafe18d1e11a200e444b/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:13:17-114
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.android.gms:play-services-mlkit-text-recognition:16.3.0] /Users/noahcorona/.gradle/caches/transforms-3/64c4935952d1aafe18d1e11a200e444b/transformed/jetified-play-services-mlkit-text-recognition-16.3.0/AndroidManifest.xml:14:17-82
+118            <meta-data
+118-->[com.google.mlkit:vision-common:16.5.0] /Users/noahcorona/.gradle/caches/transforms-3/b8021e408ec2b285255467263d2694ff/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
+119                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+119-->[com.google.mlkit:vision-common:16.5.0] /Users/noahcorona/.gradle/caches/transforms-3/b8021e408ec2b285255467263d2694ff/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.mlkit:vision-common:16.5.0] /Users/noahcorona/.gradle/caches/transforms-3/b8021e408ec2b285255467263d2694ff/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
+121            <meta-data
+121-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:20:13-22:85
+122                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+122-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:21:17-120
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:22:17-82
+124        </service>
+125
+126        <provider
+126-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:9:9-13:38
+127            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+127-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:10:13-78
+128            android:authorities="com.cuda.mlkitinitprovider"
+128-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:11:13-69
+129            android:exported="false"
+129-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:12:13-37
+130            android:initOrder="99" />
+130-->[com.google.mlkit:common:17.2.0] /Users/noahcorona/.gradle/caches/transforms-3/062ba28e2d74e3b34056360346f4aed0/transformed/jetified-common-17.2.0/AndroidManifest.xml:13:13-35
+131
+132        <service
+132-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/noahcorona/.gradle/caches/transforms-3/a0b3a18b6035c12536d9b18c85219a32/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+133            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+133-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/noahcorona/.gradle/caches/transforms-3/a0b3a18b6035c12536d9b18c85219a32/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+134            android:exported="false" >
+134-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/noahcorona/.gradle/caches/transforms-3/a0b3a18b6035c12536d9b18c85219a32/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+135            <meta-data
+135-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/noahcorona/.gradle/caches/transforms-3/a0b3a18b6035c12536d9b18c85219a32/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+136                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+136-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/noahcorona/.gradle/caches/transforms-3/a0b3a18b6035c12536d9b18c85219a32/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+137                android:value="cct" />
+137-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/noahcorona/.gradle/caches/transforms-3/a0b3a18b6035c12536d9b18c85219a32/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+138        </service>
+139        <service
+139-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+140            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+140-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+141            android:exported="false"
+141-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+142            android:permission="android.permission.BIND_JOB_SERVICE" >
+142-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+143        </service>
+144
+145        <receiver
+145-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+146            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+146-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+147            android:exported="false" />
+147-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/noahcorona/.gradle/caches/transforms-3/a7e2f1321cfe1514955ae255bfb094fc/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+148
+149        <activity
+149-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:23:9-27:75
+150            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+150-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:24:13-93
+151            android:excludeFromRecents="true"
+151-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:25:13-46
+152            android:exported="false"
+152-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:26:13-37
+153            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+153-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:27:13-72
+154        <!--
+155            Service handling Google Sign-In user revocation. For apps that do not integrate with
+156            Google Sign-In, this service will never be started.
+157        -->
+158        <service
+158-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:33:9-37:51
+159            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+159-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:34:13-89
+160            android:exported="true"
+160-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:35:13-36
+161            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+161-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:36:13-107
+162            android:visibleToInstantApps="true" />
+162-->[com.google.android.gms:play-services-auth:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/79a5cff356d5bec55bfa164feeaf3080/transformed/jetified-play-services-auth-20.0.0/AndroidManifest.xml:37:13-48
+163
+164        <activity
+164-->[com.google.android.gms:play-services-base:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/3ac5852a6a055360f4e4f7bb39c257a4/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:20:9-22:45
+165            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+165-->[com.google.android.gms:play-services-base:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/3ac5852a6a055360f4e4f7bb39c257a4/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:20:19-85
+166            android:exported="false"
+166-->[com.google.android.gms:play-services-base:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/3ac5852a6a055360f4e4f7bb39c257a4/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:22:19-43
+167            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+167-->[com.google.android.gms:play-services-base:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/3ac5852a6a055360f4e4f7bb39c257a4/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:21:19-78
+168
+169        <provider
+169-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+170            android:name="com.google.firebase.provider.FirebaseInitProvider"
+170-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+171            android:authorities="com.cuda.firebaseinitprovider"
+171-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+172            android:directBootAware="true"
+172-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+173            android:exported="false"
+173-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+174            android:initOrder="100" />
+174-->[com.google.firebase:firebase-common:20.0.0] /Users/noahcorona/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+175
+176        <meta-data
+176-->[com.google.android.gms:play-services-basement:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/0f5596c4a55863aa29d7caf4d041377f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+177            android:name="com.google.android.gms.version"
+177-->[com.google.android.gms:play-services-basement:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/0f5596c4a55863aa29d7caf4d041377f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+178            android:value="@integer/google_play_services_version" />
+178-->[com.google.android.gms:play-services-basement:18.0.0] /Users/noahcorona/.gradle/caches/transforms-3/0f5596c4a55863aa29d7caf4d041377f/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+179    </application>
+180
+181</manifest>

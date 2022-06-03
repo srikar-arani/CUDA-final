@@ -1,0 +1,26 @@
+{
+    "aptPkg": [
+      "python3-pip",
+      "supervisor",
+      "python3-scipy",
+      "python3-numpy",
+      "git",
+      "libbluetooth-dev"
+    ],
+    "pipPkg": [      
+      "Adafruit_Blinka==5.2.3",
+      "adafruit-circuitpython-busdevice==5.0.1",
+      "adafruit-circuitpython-max31865==2.2.3",
+      "Adafruit-PureIO==1.1.5",
+      "Adafruit-PlatformDetect==2.14.3",
+      "Jinja2==2.11.2",
+      "cryptography==3.0",
+      "PyBluez==0.23",
+      "RPi.GPIO==0.7.0",
+      "bson==0.5.10",      
+      "pyserial==3.4",
+      "simple_pid==0.2.4",
+      "websockets==8.1",
+      "scikit-learn==0.23.2"
+    ]
+}

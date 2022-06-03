@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141405103878",
+    "project_id": "cuda-ac739",
+    "storage_bucket": "cuda-ac739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141405103878:android:b23845d6fb75a36493e087",
+        "android_client_info": {
+          "package_name": "com.cuda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141405103878-rsc5n2819h3b7fors0u0oadthfv4dmde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATGMAne3yh4dtWdibqdyWhS1UyNOxWC4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141405103878-rsc5n2819h3b7fors0u0oadthfv4dmde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

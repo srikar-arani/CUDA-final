@@ -1,0 +1,95 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('/font/digital-7.ttf');
+   }
+body {
+    background-color:gray;
+}
+.col-sm-4 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.container-fluid {
+    background-color:rgb(0, 0, 0);
+    min-height: 98%;            
+    max-width: 98%;
+    margin: 1% 1% 1% 1%;
+    position: absolute;
+    overflow: hidden;
+    border-radius:15px;            
+}
+.navbar {
+    margin-left: -5%;
+    width: 110%;
+    padding: 15px 10% 15px 10%;
+  
+}
+.btn-left {
+    width: 30%;
+    border-radius: 55px 20px 20px 55px;            
+    
+}
+.btn-right {
+    width: 30%;
+    border-radius: 20px 55px 55px 20px;
+    
+}
+.btn-start {
+    border-radius: 25px;
+    height: 100px;          
+}
+
+.btn-text{
+    position:relative;            
+    top:90px;
+    font-size: 90px;
+}
+
+.hidden {
+  display: none;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;                                    
+  }
+  
+  #clockdiv > div{
+    margin:0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background: #00BF96;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background: #00816A;            
+    font-size: 80px;
+    font-family:'digital-clock-font';
+  }
+  
+  .smalltext{
+    margin-top:-15px;
+    font-size: 16px;
+  }
+
+#wifi-list {
+  border-radius:10px;  
+  border:1px solid #00BF96;
+  overflow-y: scroll;
+  max-height: 15em;
+}
+
+  #wifi-list > li:hover{
+    color:#00816A;    
+    cursor: pointer;
+  }
+
+  #wifi-list > li.selected{
+    color:#00816A;
+    font-weight: 700;
+    text-decoration: underline;    
+  }

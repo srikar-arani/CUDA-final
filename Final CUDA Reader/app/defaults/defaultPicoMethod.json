@@ -1,0 +1,194 @@
+{
+  "covid-4channel": {
+    "C1": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100.0,
+      "Wait time": 0.2,
+      "Interval": 20.0,
+      "Duration(s)": 1800.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C2": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100.0,
+      "Wait time": 0.2,
+      "Interval": 20.0,
+      "Duration(s)": 1800.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C3": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.2,
+      "Interval": 20.0,
+      "Duration(s)": 1800.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C4": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.2,
+      "Interval": 20.0,
+      "Duration(s)": 1800.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    }
+  },
+  "covid-2channel": {
+    "C1": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.2,
+      "Interval": 20,
+      "Duration(s)": 1800,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C4": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.2,
+      "Interval": 20,
+      "Duration(s)": 1800,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    }
+  },
+  "fibrinogen-4channel": {
+    "C1": {
+      "Auto E Range": true,
+      "E Begin": -0.6,
+      "E End": 0.0,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100.0,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 30.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C2": {
+      "Auto E Range": true,
+      "E Begin": -0.6,
+      "E End": 0.0,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100.0,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 30.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C3": {
+      "Auto E Range": true,
+      "E Begin": -0.6,
+      "E End": 0.0,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 30.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C4": {
+      "Auto E Range": true,
+      "E Begin": -0.6,
+      "E End": 0.0,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 30.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    }
+  },
+  "fibrinogen-2channel": {
+    "C1": {
+      "Auto E Range": true,
+      "E Begin": -0.6,
+      "E End": 0.0,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 30,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },
+    "C4": {
+      "Auto E Range": true,
+      "E Begin": -0.6,
+      "E End": 0.0,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 30,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    }
+  },
+  "demoFast": {
+    "C1": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100.0,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 300.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    },  
+    "C4": {
+      "Auto E Range": true,
+      "E Begin": -0.5,
+      "E End": 0.1,
+      "E Step": 0.005,
+      "E Amp": 0.05,
+      "Frequency": 100.0,
+      "Wait time": 0.005,
+      "Interval": 0.005,
+      "Duration(s)": 300.0,
+      "CurrentRange Min": "100 uA",
+      "CurrentRange Max": "100 uA"
+    }
+  }  
+}
